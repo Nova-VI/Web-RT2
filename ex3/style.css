@@ -25,16 +25,14 @@ input[type="text"] {
     border-color: transparent;
     /* Change the color to your preferred color */
     border-width: 1px;
-    /* Optional: Change the thickness of the border */
-    border-style: ridge;
-    /* Ensure that the border is a solid line */
+  
 }
 
 /* style.css */
 input[type="text"]:focus {
     border-color: #007bff;
-    border-width: 1px;
-    border-style: ridge;
+    border-width: 4px;
+    
 }
 
 .row {
