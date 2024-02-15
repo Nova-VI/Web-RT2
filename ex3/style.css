@@ -72,7 +72,7 @@ input[type="text"]:focus {
 }
 
 .custom-button {
-    width: 100px;
+    width: 80%;
     height: 0px;
     opacity: 0;
     color: white;
@@ -84,7 +84,7 @@ input[type="text"]:focus {
 
 .custom-button:hover {
     background-color: red;
-    width: 120px;
+    width: 100%;
 }
 
 .custom-button.show {
@@ -101,8 +101,17 @@ input[type="text"]:focus {
 #todo-list {
     width: 100%;
     table-layout: fixed;
+    border-spacing: 0 20px;
+    padding: 0 30px;
 }
 
 td {
     height: 70px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    margin: 30px;
 }
