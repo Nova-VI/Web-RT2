@@ -1,36 +1,108 @@
-
-body{
-    background-color: #E1E1E1E1; /* Change to the desired color */
+body {
+    background-color: #E1E1E1E1;
+    /* Change to the desired color */
 
 }
-.container {
-    display: flex;
-    flex-direction: row;
-}
-.formbutton{
-background-color: #2873C3;
+
+.formbutton {
+    background-color: #2873C3;
 
 }
 
 
 .left {
-    flex: 1;
+    position: absolute;
+    width: 70%;
 }
 
 .right {
-    flex: 2;
+    position: absolute;
+    left: 70%;
+    width: 30%;
 }
 
-nput[type="text"] {
-    border-color: transparent; /* Change the color to your preferred color */
-    border-width: 1px; /* Optional: Change the thickness of the border */
-    border-style: ridge; /* Ensure that the border is a solid line */
+input[type="text"] {
+    border-color: transparent;
+    /* Change the color to your preferred color */
+    border-width: 1px;
+    /* Optional: Change the thickness of the border */
+    border-style: ridge;
+    /* Ensure that the border is a solid line */
 }
+
 /* style.css */
 input[type="text"]:focus {
-    border-color: #007bff; 
-    border-width: 1px ;
+    border-color: #007bff;
+    border-width: 1px;
     border-style: ridge;
 }
 
-  
+.row {
+    overflow-wrap: break-word;
+    height: 50px;
+    text-align: center;
+}
+
+.nameCell {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    transition: 0.25s;
+    font-weight: bold;
+
+}
+
+.nameCell.show {
+    font-size: 30px;
+}
+
+.contentCell {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0px;
+    transition: 0.25s;
+
+}
+
+.contentCell.show {
+    font-size: 20px;
+}
+
+.contentCell.remove,
+.nameCell.remove {
+    font-size: 0px;
+}
+
+.custom-button {
+    width: 100px;
+    height: 0px;
+    opacity: 0;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(46, 46, 110);
+    transition: 0.25s;
+
+}
+
+.custom-button:hover {
+    background-color: red;
+    width: 120px;
+}
+
+.custom-button.show {
+    opacity: 1;
+    height: 30px;
+}
+
+.custom-button.remove {
+    opacity: 0;
+    height: 0;
+}
+
+
+#todo-list {
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    height: 70px;
+}
