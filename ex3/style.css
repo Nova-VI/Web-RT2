@@ -1,0 +1,36 @@
+
+body{
+    background-color: #E1E1E1E1; /* Change to the desired color */
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.formbutton{
+background-color: #2873C3;
+
+}
+
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+}
+
+nput[type="text"] {
+    border-color: transparent; /* Change the color to your preferred color */
+    border-width: 1px; /* Optional: Change the thickness of the border */
+    border-style: ridge; /* Ensure that the border is a solid line */
+}
+/* style.css */
+input[type="text"]:focus {
+    border-color: #007bff; 
+    border-width: 1px ;
+    border-style: ridge;
+}
+
+  
