@@ -1,3 +1,10 @@
+
+/**
+ * 
+ * @param {int} min - min random int that can be generated
+ * @param {int} max - max random int that can be generated
+ * @returns {int} random generated number in [min; max] intervall;
+ */
 function generateRandomInt(min, max) {
   x = Math.floor(Math.random() * (max - min + 1)) + min;
   return x;

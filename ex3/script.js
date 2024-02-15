@@ -15,7 +15,11 @@ form.addEventListener('submit', function (event) {
     addTask(name, content);
     form.reset();
 });
-
+ /**
+     * function used to add a ligne in the ToDo list containing  (name + content ) and a delete button
+     * @param{string} name - String that contain The time(can be day , hour or whatever) in which you will persuade the activity
+     * @param{string} content - String that contain the content of the activity
+     */
 function addTask(name, content) {
     const row = document.createElement('tr');
     const nameCell = document.createElement('td');
@@ -49,6 +53,12 @@ function addTask(name, content) {
     animation(deleteButton, "show", 300);
     todoList.appendChild(row);
 }
+/**
+ * 
+ * @param {HTMLElement} element - The element you want to add animation to 
+ * @param {String} finalClass - a string that represant the class name  to which the element whil transfer to
+ * @param {number} delay  - time to wait before starting the animation
+ */
 function animation(element, finalClass, delay) {
     setTimeout(() => {
         element.classList.add(finalClass);
