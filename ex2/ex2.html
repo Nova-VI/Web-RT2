@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="bootstrap2.css">
     <link rel="stylesheet" href="ex2.css">
 
 
 </head>
 
 <body>
-    <div class="container elevation">
-        <h1 class="p-4" id="title">Test</h1>
-        <div class="d-flex flex-wrap justify-content-around col-12">
-            Set The Color:<input type="color" id="color-input" class="col-4">
-            Set The Size:<input min="1" max="250" value="30" type="number" id="number-input" class="col-2">
-            Set The Font:<select id="font-select">
-            </select>
-        </div>
+    <div class="top">
+        <table>
+            <tr>
+                <td>Color<br>
+                    <input type="color" id="color-input">
+                </td>
+                <td>Size<br><input min="10" max="300" value="30" type="number" id="number-input"></td>
+                <td>Font<br><select id="font-select"></select></td>
+            </tr>
+        </table>
     </div>
-    <script src="ex3.js"></script>
+    <div class="bottom">
+        <h1 id="title">Test</h1>
+    </div>
+    <script src="ex2.js"></script>
 </body>
 
 </html>

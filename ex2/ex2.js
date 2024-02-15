@@ -290,7 +290,14 @@ colorInput.addEventListener("input", () => {
 });
 
 fontSize.addEventListener("input", () => {
-  title.style.fontSize = fontSize.value + "px";
+  if (fontSize.value > 300 || fontSize.value < 10) {
+    fontSize.style.border = "2px solid red";
+  }
+  else {
+    fontSize.style.cssText = "  border: none;border-bottom: 2px solid white; "
+    title.style.fontSize = fontSize.value + "px";
+  }
+
 });
 
 fontType.addEventListener("change", () => {
