@@ -25,14 +25,14 @@ input[type="text"] {
     border-color: transparent;
     /* Change the color to your preferred color */
     border-width: 1px;
-  
+
 }
 
 /* style.css */
 input[type="text"]:focus {
     border-color: #007bff;
     border-width: 4px;
-    
+
 }
 
 .row {
@@ -70,24 +70,26 @@ input[type="text"]:focus {
 }
 
 .custom-button {
-    width: 80%;
+    width: 40%;
     height: 0px;
     opacity: 0;
     color: white;
+    border: 2px solid black;
+    border-radius: 20px;
     cursor: pointer;
-    background-color: rgb(46, 46, 110);
+    background-color: #2873C3;
     transition: 0.25s;
 
 }
 
 .custom-button:hover {
     background-color: red;
-    width: 100%;
+    width: 60%;
 }
 
 .custom-button.show {
     opacity: 1;
-    height: 30px;
+    height: 50px;
 }
 
 .custom-button.remove {

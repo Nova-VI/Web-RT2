@@ -15,11 +15,11 @@ form.addEventListener('submit', function (event) {
     addTask(name, content);
     form.reset();
 });
- /**
-     * function used to add a ligne in the ToDo list containing  (name + content ) and a delete button
-     * @param{string} name - String that contain The time(can be day , hour or whatever) in which you will persuade the activity
-     * @param{string} content - String that contain the content of the activity
-     */
+/**
+    * function used to add a ligne in the ToDo list containing  (name + content ) and a delete button
+    * @param{string} name - String that contain The time(can be day , hour or whatever) in which you will persuade the activity
+    * @param{string} content - String that contain the content of the activity
+    */
 function addTask(name, content) {
     const row = document.createElement('tr');
     const nameCell = document.createElement('td');
@@ -29,7 +29,11 @@ function addTask(name, content) {
 
     nameCell.textContent = name;
     contentCell.textContent = content;
-    deleteButton.textContent = 'Delete';
+    const trash = document.createElement("img");
+    trash.src = "img.png"
+    trash.width = "30";
+    trash.height = "30";
+    deleteButton.appendChild(trash);
     deleteButton.addEventListener('click', function () {
         animation(deleteButton, "remove", 10);
         animation(contentCell, "remove", 150);
